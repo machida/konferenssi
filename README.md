@@ -1,4 +1,4 @@
-nolla
+konferenssi
 =====
 
-middleman blog theme.
+middleman blog theme for event.
