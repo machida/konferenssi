@@ -4,6 +4,7 @@ description: middleman blog theme for event.
 event:
   title: konferenssi
   dates: 2014/12/31
+  ticket_url: http://fjord.jp
 author: FJORD LLC.
 author_url: http://fjord.jp
 twitter_id: machida

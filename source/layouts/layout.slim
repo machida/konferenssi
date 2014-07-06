@@ -3,8 +3,12 @@ html
   = partial 'partials/head'
   body
     = partial 'partials/header'
+    = partial 'partials/global_nav'
     .body
-      - if page?
+      - if home?
+        p aaaa
+        = yield
+      - elsif page?
         article.article
           .wrapper.article__wrapper
             .row

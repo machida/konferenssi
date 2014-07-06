@@ -108,6 +108,9 @@ configure :build do
 end
 
 helpers do
+  def home?
+    current_page.path == ('index.html')
+  end
   def articles?
     current_article.nil?
   end
@@ -116,5 +119,19 @@ helpers do
   end
   def nav_page?
     current_page.url.include?('archives.html') or current_page.url.include?('tags.html')
+  end
+  def lang_class(text)
+    case (text).ascii_only?
+    when true
+      return 'is-en'
+    end
+    return 'is-ja'
+  end
+  def is_page_current(url)
+    case current_page.path == url
+    when true
+      return 'is-current'
+    end
+    false
   end
 end

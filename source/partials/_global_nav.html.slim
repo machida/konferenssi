@@ -1,0 +1,13 @@
+nav.global-nav.js-slide-nav
+  .wrapper
+    i.fa.fa-times.js-open-slide-nav.visible-xs-block.global-nav__close-icon
+    ul.global-nav__items
+      li.global-nav__item
+        = link_to "/", class: ("global-nav__link #{is_page_current('index.html')}") do
+          i.fa.fa-home.fa-lg
+      li.global-nav__item
+        = link_to "About", "/pages/about.html", class: ("global-nav__link #{is_page_current('pages/about.html')}")
+      li.global-nav__item
+        = link_to "Tags", "/pages/tags.html", class: ("global-nav__link #{is_page_current('pages/tags.html')}")
+      li.global-nav__item
+        = link_to "Archives", "/pages/archives.html", class: ("global-nav__link #{is_page_current('pages/archives.html')}")
