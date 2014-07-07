@@ -1,0 +1,9 @@
+.wrapper
+  .keynotes
+    h2.keynotes__title Keynote
+    .row
+      - articles.each do |article|
+        - if article.data.tags.include?('keynote')
+          .col-sm-4
+            .keynotes__keynote
+              a href=article.url = article.title

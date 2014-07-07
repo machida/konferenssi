@@ -3,16 +3,6 @@ pageable: true
 per_page: 10
 ---
 
-.wrapper
-  .keynotes
-    h2.keynotes__title Keynote
-    .row
-      - articles.each do |article|
-        - if article.data.tags.include?('keynote')
-          .col-sm-4
-            .keynotes__keynote
-              a href=article.url = article.title
-
 //
   - if paginate && num_pages > 1
     p

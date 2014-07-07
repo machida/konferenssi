@@ -2,11 +2,14 @@ doctype html
 html
   = partial 'partials/head'
   body
-    = partial 'partials/header'
+    - if home?
+      = partial 'partials/home_header'
+      = partial 'partials/keynotes', locals: {articles: articles}
+    - else
+      = partial 'partials/header'
     = partial 'partials/global_nav'
     .body
       - if home?
-        p aaaa
         = yield
       - elsif page?
         article.article
