@@ -1,10 +1,12 @@
-header.header
-  .wrapper.header__wrapper
-    h1.header__site-title
-      = link_to data.site.event.title, "/", class: ("header__site-title-link #{lang_class(data.site.event.title)}")
-    h2 class= "header__site-copy #{lang_class(data.site.event.title)}"
+header.home-header
+  .wrapper.home-header__wrapper
+    h1.home-header__site-title
+      = link_to data.site.event.title, "/", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
+    h2 class= "home-header__site-copy #{lang_class(data.site.event.title)}"
       = data.site.description
-    h3.header__event-dates= data.site.event.dates
-    h4.header__event-place= data.site.event.place
-    = link_to 'registration', data.site.event.ticket_url
+    h3.home-header__event-dates= data.site.event.dates
+    h4.home-header__event-place= data.site.event.place
+    .home-header__registration-wrapper.is-center-wrapper
+      = link_to data.site.event.ticket_url, class: "home-header__registration" do
+        span.home-header__registration-text Registration
     i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
