@@ -1,16 +1,15 @@
 .footer
   clear: both
   +clearfix
+  +border(top, 2px, solid, $black)
 .footer__wrapper
-  +border(top, 1px, solid, $black)
-  +rem('padding-top', 64px)
+  +rem('margin-top', 64px)
   +rem('margin-bottom', 64px)
   +relative
   +screen-xs
     +rem('padding-top', 32px)
     +rem('margin-bottom', 32px)
 .footer__about-author
-  +absolute(right, 0, bottom, 0)
   +text-block(14px, 1, false, right)
   +screen-xs
     +rem('padding-top', 24px)

@@ -1,13 +1,16 @@
 .home-header
   +box-sizing(border-box)
-  +rem('height', 360px)
-  +screen-xs
-    +rem('height', 160px)
+  +rem('padding-top', 32px)
+  +rem('padding-bottom', 72px)
 .home-header__wrapper
-  +rem('padding-top', 116px)
   +relative
   +screen-xs
     +rem('padding-top', 32px)
+.home-header__ruby
+  display: block
+  +rem('width', 88px)
+  +horizontal-mg(auto)
+  +rem('margin-bottom', 8px)
 .home-header__site-title
   +text-block(72px, 1.4, false, center)
   +tauri(bold)
@@ -17,10 +20,19 @@
   text-decoration: none
   color: $black
 .home-header__site-copy
-  +text-block(12px, 1.2, false, center)
+  +text-block(14px, 1.2, 16px, center)
   +tauri(bold)
   +screen-xs
     +text-block(10px, 1.2, false, center)
+.home-header__event-dates
+  +tauri(bold)
+  +text-block(32px, 1.5, false, center, $black)
+.home-header__event-place
+  +tauri(bold)
+  +text-block(32px, 1.5, 24px, center, $black)
+  .is-city
+    +text-block(18px)
+    +rem('margin-left', 16px)
 .home-header__registration
   +border(all, 4px, solid, $black)
   +tauri(bold)
@@ -30,20 +42,18 @@
   +inline-block(bottom)
   +relative
   background-color: #26c8fd
-  +text-shadow(rgba(255, 255, 255, .2) 0 2px 0)
   +transition(.1s)
   .home-header__registration-text
     +relative(2)
   &:hover
     background-color: #FF2F82
-    color: $white
     +text-shadow(none)
   &:active
     +top(4px)
     +text-shadow(rgba(255, 255, 255, 1) 0 0 8px)
+    color: $white
     &:after
       display: none
-
   &:before
     +absolute(top, 0, bottom, 0)
     content: ""

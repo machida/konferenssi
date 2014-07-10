@@ -1,2 +1,57 @@
-.keynotes__keynote
-  +border(all, 4px, solid, $black)
+.keynote
+  +clearfix
+  +relative
+  +rem('margin-bottom', 40px)
+.keynote__label
+  +text-block(12px, 22px)
+  +inline-block(bottom)
+  +absolute(left, -34px, top, 8px)
+  background-color: $yellow
+  +rem('padding', 0 32px)
+  +rotate(-34deg)
+  +tauri(bold)
+.keynote__header
+  background-color: $black
+  color: $white
+  +tauri(bold)
+  +rem('padding', 8px 16px)
+  +clearfix
+.keynote__date-time
+  +tauri(bold)
+  +inline-block(bottom)
+  +text-block(18px, 24px)
+  float: right
+  i
+    +rem('margin-right', 8px)
+  .is-date
+    +rem('margin-right', 16px)
+.keynote__body
+  +rem('padding', 8px 16px)
+  +rem('height', 160px)
+  +clearfix
+  +border(bottom horizontal, 4px, solid, $black)
+.keynote__hgroup
+  +rem('padding-left', 72px)
+  +rem('min-height', 56px)
+  +rem('margin-bottom', 16px)
+  +relative
+.keynote__image
+  +rem('width', 56px)
+  +absolute(left, 0, top, 0)
+.keynote__name
+  +text-block(20px, 1.5, false, $black)
+  +rem('padding-bottom', 2px)
+  +tauri(bold)
+  text-decoration: none
+  +border(bottom, 2px, solid, $black)
+  display: block
+.keynote__title
+  +text-block(16px, 1.5)
+  +rem('padding-left', 24px)
+  +rem('margin-bottom', 16px)
+  +relative
+  &:after
+    +fa
+    content: "\f10d"
+    +absolute(left, 0, top, 2px)
+    +text-block(16px, 1)

@@ -1,9 +1,21 @@
 .wrapper
   .keynotes
-    h2.keynotes__title Keynote
     .row
       - articles.each do |article|
         - if article.data.tags.include?('keynote')
           .col-sm-4
-            .keynotes__keynote
-              a href=article.url = article.title
+            .keynote
+              .keynote__label KYENOTE
+              header.keynote__header
+                h3.keynote__date-time
+                  span.is-date
+                    i.fa.fa-calendar-o
+                    = article.data.p_date
+                  span.is-time
+                      i.fa.fa-clock-o.fa-lg
+                      = article.data.p_time
+              .keynote__body
+                .keynote__hgroup
+                  = image_tag(article.data.image, class: "keynote__image")
+                  h2= link_to article.data.name, article.url, class: "keynote__name"
+                h3.keynote__title= article.title

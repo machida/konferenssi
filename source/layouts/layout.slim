@@ -4,13 +4,15 @@ html
   body
     - if home?
       = partial 'partials/home_header'
+      = partial 'partials/global_nav'
       = partial 'partials/keynotes', locals: {articles: articles}
     - else
       = partial 'partials/header'
-    = partial 'partials/global_nav'
+      = partial 'partials/global_nav'
     .body
       - if home?
         = yield
+        = partial 'partials/home_schedule', locals: {articles: articles}
       - elsif page?
         article.article
           .wrapper.article__wrapper

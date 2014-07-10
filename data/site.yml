@@ -1,14 +1,15 @@
 url: http://
 
-description: middleman blog theme for event.
+description: shibuya.rb
 event:
-  title: konferenssi
-  dates: 2014/12/31
+  title: SHIBUYA RUBY KAIGI
+  dates: Nov 1st, 2014
+  start_time: 10:00
   place: Shidax Culture Hall
+  city: Shibuya Tokyo
   ticket_url: http://fjord.jp
-  author: FJORD LLC.
+  author: shibuya.rb
   author_url: http://fjord.jp
   twitter_id: machida
   facebook_id: teppeimachida
-  linkedin_url: http://www.linkedin.com/pub/teppei-machida/2b/797/7a
   github_url: https://github.com/machida/nolla

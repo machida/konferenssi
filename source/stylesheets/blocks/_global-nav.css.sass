@@ -1,4 +1,7 @@
 .global-nav
+  text-align: center
+  +rem('margin-bottom', 32px)
+  +border(vertical, 4px, solid, $black)
   +screen-xs
     +rem('width', 300px)
     background-color: $black
@@ -13,7 +16,8 @@
   +inline-block(bottom)
 .global-nav__link
   display: block
-  +text-block(14px, 46px, false, $black)
+  +text-block(24px, 46px, false, $black)
+  +horizontal-pd(32px)
   text-decoration: none
   +tauri(bold)
   &.is-current

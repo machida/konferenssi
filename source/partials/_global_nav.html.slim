@@ -4,10 +4,12 @@ nav.global-nav.js-slide-nav
     ul.global-nav__items
       li.global-nav__item
         = link_to "/", class: ("global-nav__link #{is_page_current('index.html')}") do
-          i.fa.fa-home.fa-lg
+          i.fa.fa-home
       li.global-nav__item
-        = link_to "About", "/pages/about.html", class: ("global-nav__link #{is_page_current('pages/about.html')}")
+        = link_to "Schedule", "/pages/schedule.html", class: ("global-nav__link #{is_page_current('pages/schedule.html')}")
       li.global-nav__item
-        = link_to "Tags", "/pages/tags.html", class: ("global-nav__link #{is_page_current('pages/tags.html')}")
+        = link_to "Access", "/pages/access.html", class: ("global-nav__link #{is_page_current('pages/access.html')}")
       li.global-nav__item
-        = link_to "Archives", "/pages/archives.html", class: ("global-nav__link #{is_page_current('pages/archives.html')}")
+        = link_to "Speakers", "/pages/speakers.html", class: ("global-nav__link #{is_page_current('pages/speakers.html')}")
+      li.global-nav__item
+        = link_to "Sponsors", "/pages/sponsors.html", class: ("global-nav__link #{is_page_current('pages/sponsors.html')}")
