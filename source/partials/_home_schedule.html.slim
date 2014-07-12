@@ -1,21 +1,16 @@
-.wrapper
-  .row
-    .col-sm-6
-      .home-schedule
-        h2.home-schedule__title schedule
-        - articles.each do |article|
-          - if article.data.tags.include?('schedule')
-            .home-schedule
-              header.home-schedule__header
-                h3.home-schedule__date-time
-                  span.is-date
-                    i.fa.fa-calendar-o
-                    = article.data.p_date
-                  span.is-time
-                      i.fa.fa-clock-o.fa-lg
-                      = article.data.p_time
-              .home-schedule__body
-                .home-schedule__hgroup
-                  = image_tag(article.data.image, class: "home-schedule__image")
-                  h2= link_to article.data.name, article.url, class: "home-schedule__name"
-                h3.home-schedule__title= article.title
+.home-schedule
+  h2.home-schedule__title Schedule
+  .home-schedule__items
+    - articles.sort_by(&:date).each do |article|
+      - if article.data.tags.include?('schedule')
+        .home-schedule-content
+          header.home-schedule-content__header
+            h3.home-schedule-content__time
+              span.is-time
+                  i.fa.fa-clock-o.fa-lg.home-schedule-content__time-icon
+                  = article.data.p_time
+          .home-schedule-content__body
+            = image_tag(article.data.image, class: "home-schedule-content__image")
+            h3.home-schedule-content__title= article.title
+            .home-schedule-content__hgroup
+              h2.home-schedule-content__name= link_to article.data.name, article.url, class: "home-schedule-content__name-link"

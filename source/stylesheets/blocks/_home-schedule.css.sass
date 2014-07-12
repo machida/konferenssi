@@ -1,0 +1,35 @@
+.home-schedule
+  +rem('margin-bottom', 48px)
+.home-schedule__title
+  +tauri(bold)
+  +text-block(20px, 1.5, 16px)
+
+.home-schedule-content
+  +rem('margin-bottom', 8px)
+.home-schedule-content__header
+  background-color: $black
+  +rem('padding', 4px 8px)
+  color: $white
+.home-schedule-content__title
+  +text-block(18px, 1.5, 8px, bold)
+  +rem('padding-bottom', 8px)
+  +border(bottom, 1px, solid, $black)
+.home-schedule-content__time
+  +text-block(16px, 1.5)
+.home-schedule-content__time-icon
+  +rem('margin-right', 4px)
+.home-schedule-content__body
+  +rem('padding', 8px 88px 8px 16px)
+  +border(left bottom right, 4px, solid, $black)
+  +relative
+  +clearfix
+.home-schedule-content__image
+  +rem('width', 56px)
+  +rem('margin-left', 8px)
+  +absolute(right, 16px, top, 8px)
+  float: right
+.home-schedule-content__name
+  +text-block(14px, 1.5, 8px)
+.home-schedule-content__name-link
+  color: $black
+  +hover-link

@@ -2,13 +2,14 @@
   +box-sizing(border-box)
   +rem('padding-top', 32px)
   +rem('padding-bottom', 72px)
+  background-color: #FFFF98
 .home-header__wrapper
   +relative
   +screen-xs
     +rem('padding-top', 32px)
 .home-header__ruby
   display: block
-  +rem('width', 88px)
+  +rem('width', 64px)
   +horizontal-mg(auto)
   +rem('margin-bottom', 8px)
 .home-header__site-title
@@ -20,13 +21,13 @@
   text-decoration: none
   color: $black
 .home-header__site-copy
-  +text-block(14px, 1.2, 16px, center)
+  +text-block(14px, 1.2, 12px, center)
   +tauri(bold)
   +screen-xs
     +text-block(10px, 1.2, false, center)
 .home-header__event-dates
   +tauri(bold)
-  +text-block(32px, 1.5, false, center, $black)
+  +text-block(48px, 1.5, 8px, center, $black)
 .home-header__event-place
   +tauri(bold)
   +text-block(32px, 1.5, 24px, center, $black)

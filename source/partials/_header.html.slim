@@ -1,10 +1,13 @@
 header.header
   .wrapper.header__wrapper
-    h1.header__site-title
-      = link_to data.site.event.title, "/", class: ("header__site-title-link #{lang_class(data.site.event.title)}")
-    h2 class= "header__site-copy #{lang_class(data.site.event.title)}"
-      = data.site.description
-    h3.header__event-dates= data.site.event.dates
-    h4.header__event-place= data.site.event.place
-    = link_to 'registration', data.site.event.ticket_url
-    i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
+    .row
+      .col-sm-8
+        h1.header__site-title
+          = link_to "/", class: ("header__site-title-link #{lang_class(data.site.event.title)}") do
+            = data.site.event.title
+            = image_tag('ruby.svg', class: "header__ruby")
+      .col-sm-4
+        h3.header__event-dates= data.site.event.dates
+        h4.header__event-place= data.site.event.place
+        = link_to 'registration', data.site.event.ticket_url
+        i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
