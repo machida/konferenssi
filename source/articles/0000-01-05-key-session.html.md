@@ -1,12 +1,11 @@
 ---
-title: 開場・受付
+title: 開会挨拶
 name: Teppei Machida
-tags: schedule
+tags: keynote, schedule
 image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
 p_date: 12/31
-p_time: '10:30'
+p_time: '13:30'
 length: 30
-id: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

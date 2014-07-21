@@ -1,10 +1,10 @@
 ---
-title: 開場・受付
+title: Lightning Talks
 name: Teppei Machida
 tags: schedule
 image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
 p_date: 12/31
-p_time: '10:30'
+p_time: '11:00'
 length: 30
 id: 1
 ---
