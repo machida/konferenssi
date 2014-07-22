@@ -1,10 +1,10 @@
 ---
-title: 開会挨拶
+title: Shibuya LT
 name: Teppei Machida
 tags: schedule
 image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
 p_date: 12/31
-p_time: '13:30'
+p_time: '16:30'
 length: 30
 ---
 

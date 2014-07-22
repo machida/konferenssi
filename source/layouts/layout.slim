@@ -5,7 +5,7 @@ html
     - if home?
       = partial 'partials/home_header'
       = partial 'partials/global_nav'
-      = partial 'partials/keynotes', locals: {articles: articles}
+      = partial 'partials/pickups', locals: {articles: articles}
     - else
       = partial 'partials/header'
       = partial 'partials/global_nav'

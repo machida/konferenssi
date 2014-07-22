@@ -11,9 +11,11 @@
   +rem('padding', 4px 8px)
   color: $white
 .home-schedule-content__title
-  +text-block(18px, 1.5, 8px, bold)
-  +rem('padding-bottom', 8px)
-  +border(bottom, 1px, solid, $black)
+  +text-block(18px, 1.5, false, bold)
+.home-schedule-content__hgroup
+  +rem('margin-top', 8px)
+  +rem('padding-top', 8px)
+  +border(top, 1px, solid, $black)
 .home-schedule-content__time
   +text-block(16px, 1.5)
 .home-schedule-content__time-icon
