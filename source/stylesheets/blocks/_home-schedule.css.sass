@@ -5,11 +5,19 @@
   +text-block(20px, 1.5, 16px)
 
 .home-schedule-content
-  +rem('margin-bottom', 8px)
+  +border(left top right, 4px, solid, $black)
+  &:last-child
+    +border(bottom, 4px, solid, $black)
+  &.is-small
+    .home-schedule-content__header
+      border-bottom: 0
+  &:nth-child(even)
+    background-color: #eeeeee
 .home-schedule-content__header
-  background-color: $black
+  +border(bottom, 2px, dotted, $black)
   +rem('padding', 4px 8px)
-  color: $white
+  color: $black
+
 .home-schedule-content__title
   +text-block(18px, 1.5, false, bold)
 .home-schedule-content__hgroup
@@ -17,12 +25,13 @@
   +rem('padding-top', 8px)
   +border(top, 1px, solid, $black)
 .home-schedule-content__time
-  +text-block(16px, 1.5)
+  +text-block(16px, 1.5, false, bold)
+  .is-time
+    +rem('margin-right', 8px)
 .home-schedule-content__time-icon
   +rem('margin-right', 4px)
 .home-schedule-content__body
   +rem('padding', 8px 88px 8px 16px)
-  +border(left bottom right, 4px, solid, $black)
   +relative
   +clearfix
 .home-schedule-content__image

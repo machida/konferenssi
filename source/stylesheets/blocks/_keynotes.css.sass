@@ -2,6 +2,7 @@
   +clearfix
   +relative
   +rem('margin-bottom', 40px)
+  +border(all, 4px, solid, $black)
   +screen-xs
     +rem('margin-bottom', 16px)
 .keynote__label
@@ -13,11 +14,12 @@
   +rotate(-34deg)
   +tauri(bold)
 .keynote__header
-  background-color: $black
-  color: $white
+  background-color: #eeeeee
+  color: $black
   +tauri(bold)
   +rem('padding', 4px 16px)
   +clearfix
+  +border(bottom, 2px, dotted, $black)
 .keynote__date-time
   +tauri(bold)
   +inline-block(bottom)
@@ -31,7 +33,6 @@
   +rem('padding', 8px 16px)
   +rem('height', 160px)
   +clearfix
-  +border(bottom horizontal, 4px, solid, $black)
 .keynote__hgroup
   +rem('padding-left', 72px)
   +rem('min-height', 56px)
