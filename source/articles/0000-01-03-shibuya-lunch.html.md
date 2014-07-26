@@ -1,8 +1,6 @@
 ---
 title: Shibuya Lunch
-name: Teppei Machida
-tags: schedule
-image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
+tags: small, schedule
 p_date: 12/31
 p_time: '11:30'
 length: 90

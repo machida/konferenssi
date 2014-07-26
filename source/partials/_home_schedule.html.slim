@@ -9,13 +9,10 @@
               span.is-time
                   i.fa.fa-clock-o.fa-lg.home-schedule-content__time-icon
                   = article.data.p_time
-              - if article.data.tags.include?('small')
-                span.is-title= article.title
+              span.is-title= article.title
+              - if article.data.name
+                = link_to article.data.name, article.url, class: "home-schedule-content__name-link"
           - if not article.data.tags.include?('small')
             .home-schedule-content__body
               - if article.data.image
                 = image_tag(article.data.image, class: "home-schedule-content__image")
-              h3.home-schedule-content__title= article.title
-              - if article.data.name
-                .home-schedule-content__hgroup
-                  h2.home-schedule-content__name= link_to article.data.name, article.url, class: "home-schedule-content__name-link"
