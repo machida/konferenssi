@@ -14,9 +14,9 @@
   &:nth-child(even)
     background-color: #eeeeee
 .home-schedule-content__header
-  +border(bottom, 2px, dotted, $black)
   +rem('padding', 4px 8px)
   color: $black
+  +relative
 
 .home-schedule-content__title
   +text-block(18px, 1.5, false, bold)
@@ -35,10 +35,11 @@
   +relative
   +clearfix
 .home-schedule-content__image
-  +rem('width', 56px)
+  +rem('width', 24px)
   +rem('margin-left', 8px)
-  +absolute(right, 16px, top, 8px)
+  +absolute(right, 8px, top, 4px)
   float: right
+  +border-radius(50%)
 .home-schedule-content__name
   +text-block(14px, 1.5, 8px)
 .home-schedule-content__name-link

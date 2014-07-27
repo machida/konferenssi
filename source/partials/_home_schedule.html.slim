@@ -12,7 +12,5 @@
               span.is-title= article.title
               - if article.data.name
                 = link_to article.data.name, article.url, class: "home-schedule-content__name-link"
-          - if not article.data.tags.include?('small')
-            .home-schedule-content__body
               - if article.data.image
                 = image_tag(article.data.image, class: "home-schedule-content__image")
