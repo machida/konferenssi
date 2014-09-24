@@ -8,56 +8,62 @@ body
     overflow: hidden
 .header
   +box-sizing(border-box)
-  +rem('padding-bottom', 24px)
+  +rem('padding-bottom', 8px)
   background-color: #FFFF98
   +screen-xs
-    +rem('height', 160px)
+    height: auto
+    +rem('padding-bottom', 16px)
+    +rem('margin-bottom', 16px)
 .header__wrapper
-  +rem('padding-top', 32px)
+  +rem('padding-top', 16px)
   +relative
   +screen-xs
-    +rem('padding-top', 32px)
+    +rem('padding-top', 4px)
+    +rem('padding-bottom', 4px)
 .header__site-title
-  +text-block(48px, 1.4, false)
-  +tauri(bold)
-  +relative
+  +text-block(36px, 1.4, false)
   +rem('padding-left', 68px)
+  +top(8px)
+  +main-bold-font
   +screen-xs
-    +text-block(60px, 1.3)
+    padding-left: 0
+    +text-block(24px, 1.3, false, center)
 .header__site-title-link
   text-decoration: none
   color: $black
 .header__ruby
   +rem('width', 52px)
-  +absolute(left, 0, top, 14px)
+  +absolute(left, 0, top, 6px)
+  +screen-xs
+    +rem('width', 32px)
+    position: static
+    display: block
+    +horizontal-mg(auto)
+    +rem('margin-bottom', 4px)
 .header .header__open-global-nav-icon
-  display: block
-  +text-block(32px, 50px)
-  +rem('width', 50px)
-  +rem('height', 50px)
-  +absolute(left, 20px, top, 0px)
-.header .header__global-nav-close-icon
+  +screen-xs
+    display: block
+    +text-block(32px, 50px)
+    +rem('width', 50px)
+    +rem('height', 50px)
+    +absolute(left, 20px, top, 0px, 2)
+.global-nav__close-icon
   display: block
   +absolute(right, 0, top, 0, 2)
   +text-block(32px, 50px, false, $white, center)
   +rem('width', 50px)
   +rem('height', 50px)
 .header__infomations
-  +rem('margin-bottom', 8px)
+  +top(-4px)
 .header__infomations-item
   +inline-block(bottom)
   +tauri(bold)
-  +text-block(20px, 1.5, false)
+  +text-block(20px, 34px, false)
   &.is-event-dates
     +rem('margin-right', 8px)
-.header__registration
-  text-align: center
-.header__registration-link
-  +inline-block(bottom)
-  background-color: $pink
+.header__infomations-item-link
   color: $black
-  text-decoration: none
-  +text-block(16px, 2)
-  +tauri(bold)
-  +horizontal-pd(12px)
-  +border(all, 4px, solid, $black)
+  +hover-link
+.header__infomations-item-icon
+  +rem('margin-left', 8px)
+  color: $pink

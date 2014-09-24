@@ -1,0 +1,24 @@
+.speakers-speaker
+  +border(all, 4px, solid, $black)
+  +rem('margin-bottom', 16px)
+  +rem('height', 260px)
+  +relative
+  +rem('padding', 40px 16px 16px)
+  +box-sizing(border-box)
+  +relative
+  +screen-xs
+    +rem('height', 180px)
+.speakers-speaker__title
+  +text-block(18px, 1.5, 16px, bold)
+  display: block
+.speakers-speaker__image
+  +absolute(right, 16px, top, 16px)
+  +size(48px)
+  +border-radius(50%)
+.speakers-speaker__time
+  +tauri(bold)
+  background-color: $black
+  +absolute(left, 0, top, 0)
+  display: block
+  +text-block(14px, 32px, false, $white)
+  +horizontal-pd(8px)

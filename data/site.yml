@@ -1,15 +1,16 @@
-url: http://
-
-description: shibuya.rb
+title: konferenssi
+keywords: Ruby 地域Ruby会議 Shibuya.rb 渋谷Ruby会議01
+description: 毎月第 3 水曜に開催している shibuya.rb の拡大版です。Shibuya.rb メンバーの発表と近隣地域 Ruby コミュニティからの招待講演を行います。
 event:
-  title: SHIBUYA RUBY KAIGI
-  dates: Nov 1st, 2014
-  start_time: 10:00
-  place: Shidax Culture Hall
+  title: konferenssi
+  dates: 2014年11月1日
+  place: SHIDAX CULTURE HALL
   city: Shibuya Tokyo
-  ticket_url: http://fjord.jp
+  ticket_url: http://shibuyarb.doorkeeper.jp/events/15238
   author: shibuya.rb
-  author_url: http://fjord.jp
-  twitter_id: machida
-  facebook_id: teppeimachida
-  github_url: https://github.com/machida/nolla
+  facebook_group_id: shibuya.rb
+  twitter_id: search?f=realtime&q=%23shibuyarb
+  github_url: https://github.com/shibuyarb/shibuya01
+  location:
+    googlemap_url: https://www.google.com/maps/preview?ll=-89.858394,726.107163&z=0&t=m&hl=ja&gl=JP&mapclient=embed&cid=5340717436096242888
+    googlemap_iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.7777835073564!2d139.70091299999999!3d35.66331999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca8a26f7657%3A0x4a1e0a36384064c8!2z44K344OA44OD44Kv44K5IOOCq-ODq-ODgeODo-ODvOODm-ODvOODqw!5e0!3m2!1sja!2sjp!4v1407058368613

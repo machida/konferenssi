@@ -1,5 +1,6 @@
 .article__wrapper
   +relative
+  +rem('max-width', 960px)
 .article__content
   +rem('max-width', 640px)
   float: right
@@ -12,7 +13,7 @@
     +rem('margin-bottom', 8px)
 .article__title
   +text-block(32px, 1.6, false, bold)
-  +bold-ja
+  +main-bold-font
   +screen-xs
     +text-block(26px, 1.6, 16px, bold)
     +border(bottom, 1px, solid, $black)
@@ -26,15 +27,15 @@
   color: $black
 
 .article__created-at
-  +inline-block(bottom)
-  +text-block(14px, 1, 32px, $black)
+  display: block
+  +text-block(14px, 1, 32px, $black, center)
   +rem('padding', 5px 8px)
   +border(all, 2px, solid, $black)
   +tauri(bold)
   +top(9px)
   +nowrap
   +screen-xs
-    +text-block(12px, 1, 16px, $black)
+    +text-block(14px, 18px, 16px, $black)
     +rem('padding', 3px 6px)
 .article__tags-item
   display: block

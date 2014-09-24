@@ -90,7 +90,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  activate :minify_html, :remove_quotes => false, :remove_intertag_spaces => true
+  # activate :minify_html, :remove_quotes => false, :remove_intertag_spaces => true
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -98,13 +98,20 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
 end
 
 helpers do
@@ -121,7 +128,7 @@ helpers do
     current_page.url.include?('archives.html') or current_page.url.include?('tags.html')
   end
   def lang_class(text)
-    case (text).ascii_only?
+    case (text.to_s).ascii_only?
     when true
       return 'is-en'
     end

@@ -1,0 +1,19 @@
+.article__sub
+  +screen-xs
+    +relative
+    +rem('min-height', 80px)
+.article__speaker-image
+  display: block
+  +border-radius(4px)
+  +rem('max-width', 120px)
+  +horizontal-mg-auto
+  +rem('margin-bottom', 8px)
+  +screen-xs
+    +rem('width', 80px)
+    +absolute(left, 0, top, 0)
+.article__speaker-data
+  +screen-xs
+    +rem('padding-left', 96px)
+.article__speaker-name
+  +text-block(20px, 1.4, false, center)
+  +main-font

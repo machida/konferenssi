@@ -1,8 +1,35 @@
+.timetable
+  +relative
 .timetable__cell
-  +rem('height', 120px)
+  +rem('height', 180px)
   +rem('padding-top', 10px)
   +box-sizing(border-box)
-  +border(bottom, 2px, solid, $black)
+  +border(bottom, 1px, dotted, tint($black, 20%))
+  &:first-child
+    +border(top, 1px, dotted, tint($black, 20%))
 .timetable__time-label
+  +text-block(16px, 28px, false, $white)
+  +relative(auto, top, -25px)
+  +inline-block(false)
+  background-color: $black
+  +rem('padding-left', 8px)
+  +rem('padding-right', 4px)
   +tauri(bold)
-  +text-block(16px, 1.6)
+  &:before
+    content: ""
+    display: block
+    +border(all, 14px, solid, transparent)
+    border-left-color: $black
+    +absolute(right, -28px, top, 0)
+  +screen-xs
+    +text-block(14px, 22px, false, $white)
+    +relative(auto, top, -20px)
+    +inline-block(false)
+    background-color: $black
+    +rem('padding-left', 8px)
+    &:before
+      content: ""
+      display: block
+      +border(all, 11px, solid, transparent)
+      border-left-color: $black
+      +absolute(right, -22px, top, 0)

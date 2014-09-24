@@ -2,15 +2,16 @@ header.header
   .wrapper.header__wrapper
     i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
     .row
-      .col-sm-8
-        h1.header__site-title
-          = link_to "/", class: ("header__site-title-link #{lang_class(data.site.event.title)}") do
-            = data.site.event.title
+      .col-sm-8.col-xs-12
+        h1.header__site-title class= "#{lang_class(data.site.event.title)}"
+          = link_to "/index.html", class: ("header__site-title-link") do
             = image_tag('ruby.svg', class: "header__ruby")
-      .col-sm-4
+            = data.site.event.title
+      .col-sm-4.visible-lg-block
         .header__infomations
           ul.header__infomations-items
             li.header__infomations-item.is-event-dates= data.site.event.dates
-            li.header__infomations-item.is-event-place= data.site.event.place
-        .header__registration
-          = link_to 'Registration', data.site.event.ticket_url, class: "header__registration-link"
+            li.header__infomations-item.is-event-place
+              = link_to "/access", class: "header__infomations-item-link"
+                = data.site.event.place
+                i.fa.fa-map-marker.header__infomations-item-icon
